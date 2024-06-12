@@ -1,12 +1,16 @@
 
 import './app.scss';
+import Hero from './components/hero/Hero';
 import Navbar from './components/navbar/Navbar';
 import Sidebar from './components/sidebar/sidebar';
 
 const App =() => {
   return (
     <div>
-    <section id='HomePage'> <Navbar/> </section>
+    <section id='HomePage'> 
+    <Navbar/>
+    <Hero/> 
+    </section>
     <section> <Sidebar/> </section>
     <section id='Services'>Services</section>
     <section id='Portfolio'>Parallax</section>

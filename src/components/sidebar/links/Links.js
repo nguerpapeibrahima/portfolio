@@ -23,7 +23,7 @@ const itemsVariants = {
     y: 50,
     opacity: 0,
   }
-}
+};
   const items = 
     ["HomePage",
     "Services",
