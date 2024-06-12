@@ -1,29 +1,52 @@
 import './services.scss';
-import { motion } from 'framer-motion';
+import { animate, color, motion, stagger, useInView } from 'framer-motion';
 import imgCode from './code1.jpg'
+import { useRef } from 'react';
+
+
+const variants = {
+  initial:{
+    x: -500,
+    y:100,
+    opacity:0
+  },
+  animate:{
+    x:0,
+    opacity:1,
+    y:0,
+    transition: {
+      duration:1,
+      staggerChildren:0.1,
+    },
+  },
+};
 
 const Services = () => {
+  const ref = useRef();
+
+  const inView = useInView(ref, {margin:"-100px"})
   return (
-    <motion.div className='services'>
-    <motion.div className='textContainer'>
+    <motion.div className='services' variants={variants} 
+    initial="initial" ref={ref} animate={inView && "animate"}>
+    <motion.div className='textContainer' variants={variants}>
       <p>
         I focus on helping your brand grow
-        <br/> and move forward
+          <br/> and move forward
       </p>
       <hr/>
     </motion.div>
-    <motion.div className='titleContainer'>
+    <motion.div className='titleContainer'variants={variants}>
       <div className='title'>
         <img src={imgCode} alt=''/>
-        <h1> <b>unique</b> Ideas</h1>
+        <h1> <motion.b whileHover={{color:"orange"}} >unique</motion.b> Ideas</h1>
          </div>
          <div className='title'>
-           <h1> <b> For Your</b>Business</h1>
+           <h1> <motion.b whileHover={{color:"orange"}}> For Your</motion.b>Business</h1>
            <button> What We Do?</button>
          </div>   
     </motion.div>
-    <motion.div className='listContainer'>
-    <div className='box'>
+    <motion.div className='listContainer' variants={variants}>
+    <motion.div className='box' whileHover={{background:"lightgray", color:"black"}}>
       <h2>Branding</h2>
       <p>
         As a front-end web developer, my primary responsibility
@@ -33,8 +56,8 @@ const Services = () => {
           ensuring that the site is both visually appealing and user-friendly.
       </p>
       <button>Go</button>
-      </div>
-      <div className='box'>
+      </motion.div>
+      <motion.div className='box' whileHover={{background:"lightgray", color:"black"}} variants={variants}>
       <h2>Branding</h2>
       <p>
           I work closely with designers to bring their creative visions to life
@@ -45,8 +68,8 @@ const Services = () => {
           users. 
       </p>
       <button>Go</button>
-      </div>
-      <div className='box'>
+      </motion.div>
+      <motion.div className='box' whileHover={{background:"lightgray", color:"black"}}>
       <h2>Branding</h2>
       <p>
       Additionally, I integrate APIs and other back-end services to ensure
@@ -57,7 +80,7 @@ const Services = () => {
         engaging and functional digital experiences.
       </p>
       <button>Go</button>
-      </div>
+      </motion.div>
       </motion.div>
     </motion.div>
   );
