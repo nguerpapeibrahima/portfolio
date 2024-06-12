@@ -1,5 +1,5 @@
 import './navbar.css';
-import Sidebar from '../sidebar/sidebar';
+import Sidebar from '../sidebar/Sidebar';
 
 
 

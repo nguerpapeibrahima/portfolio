@@ -2,7 +2,9 @@
 import './app.scss';
 import Hero from './components/hero/Hero';
 import Navbar from './components/navbar/Navbar';
-import Sidebar from './components/sidebar/sidebar';
+import Parallax from './components/parallax/Parallax';
+import Sidebar from './components/sidebar/Sidebar';
+import Services from './components/services/Services';
 
 const App =() => {
   return (
@@ -12,9 +14,9 @@ const App =() => {
     <Hero/> 
     </section>
     <section> <Sidebar/> </section>
-    <section id='Services'>Services</section>
-    <section id='Portfolio'>Parallax</section>
-    <section>Portfolio1</section>
+    <section id='Services'><Parallax type="services"/> </section>
+    <section><Services/> </section>
+    <section id='Portfolio'><Parallax type='portfolio' /> </section>
     <section>Portfolio2</section>
     <section id='About'>About</section>
     <section id='Contact'>Contact</section>
