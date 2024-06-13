@@ -5,7 +5,7 @@
   position: relative;
 
   .wrapper {
-    max-width: 1366px;
+    max-width: 1000px;
     height: 100%;
     margin: auto;
     display: flex;
@@ -20,13 +20,13 @@
       gap: 40px; /* Vertical gap between elements */
 
       h2 {
-        font-size: 25px;
+        font-size: 16px;
         color: rebeccapurple; /* Adjusted color for h2 */
         letter-spacing: 10px;
       }
 
       h1 {
-        font-size: 80px;
+        font-size: 50px;
         color: white; /* Assuming a color for h1 for better visibility */
       }
 

@@ -1,4 +1,5 @@
 .services {
+  max-width: 1500px;
   background: linear-gradient(180deg, #0c0c1d, #111132);
   height: 100%;
   display: flex;
@@ -16,7 +17,7 @@
     gap: 20px;
 
     p {
-      font-weight: 200;
+      font-weight: 100;
       font-size: 20px;
       color: gray;
       text-align: right;
@@ -50,18 +51,18 @@
       }
 
       h1 {
-        font-size: 96px;
-        font-weight: 100;
+        font-size: 50px;
+        font-weight: 50;
         text-align: center; /* Center aligning h1 */
       }
 
       button {
-        width: 300px;
-        height: 100px;
-        border-radius: 50px;
+        width: 100px;
+        height: 50px;
+        border-radius: 25px;
         background-color: orange;
         border: none;
-        font-size: 24px;
+        font-size: 10px;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -74,12 +75,14 @@
   .listContainer {
     flex: 2;
     display: flex;
-    max-width: 1366px;
+    max-width: 1000px;
     margin: auto;
+    padding-top: 30px;
+    gap: 15px;
 
     .box {
       flex: 1;
-      padding: 50px;
+      padding: 20px;
       border: 0.5px solid gray;
       display: flex;
       flex-direction: column;
@@ -98,13 +101,13 @@
       }
 
       button {
-        width: 200px; /* Adjusted width for better button layout */
-        padding: 10px;
+        width: 100px; /* Adjusted width for better button layout */
+        padding: 6px;
         margin-top: 30px;
         background-color: orange;
         border: none;
         cursor: pointer;
-        font-size: 18px; /* Increased font size */
+        font-size: 8px; /* Increased font size */
         border-radius: 10px; /* Added border radius for button */
         transition: background-color 0.3s ease, color 0.3s ease;
 
