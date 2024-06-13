@@ -4,12 +4,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 20px; /* Added padding for spacing */
 
   .textContainer {
     flex: 1;
     align-self: flex-end;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
     gap: 20px;
 
     p {
@@ -20,7 +23,8 @@
     }
 
     hr {
-      width: 500px;
+      width: 100%; /* Adjusted width to 100% for responsiveness */
+      max-width: 500px; /* Added max-width for larger screens */
       border: none;
       border-top: 0.5px solid gray;
     }
@@ -31,68 +35,84 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     .title {
       display: flex;
       align-items: center;
       gap: 50px;
 
-    img {
-    width: 300px;
-    height: 100px;
-    border-radius: 50px;
-    object-fit: cover;
-  }
+      img {
+        width: 300px;
+        height: 100px;
+        border-radius: 50px;
+        object-fit: cover; /* Ensuring image covers container */
+      }
 
-  h1 {
-    font-size: 96px;
-    font-weight: 100;
-  }
-  button {
-    width: 300px;
-    height: 100px;
-    border-radius: 50px;
-    background-color: orange;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-  }
-    }
-    }
-    .listContainer {
-      flex: 2;
-      display: flex;
-      max-width: 1366px;
-      margin: auto;
-      
+      h1 {
+        font-size: 96px;
+        font-weight: 100;
+        text-align: center; /* Center aligning h1 */
+      }
 
-      .box {
-        padding: 50px;
-        border: 0.5px solid gray;
+      button {
+        width: 300px;
+        height: 100px;
+        border-radius: 50px;
+        background-color: orange;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         align-items: center;
+        justify-content: center;
+        text-align: center; /* Center aligning button text */
+      }
+    }
+  }
 
-        h2 {
-          margin-bottom: 30px;
-        }
-        p {
-          font-size: 15px;
-        }
+  .listContainer {
+    flex: 2;
+    display: flex;
+    max-width: 1366px;
+    margin: auto;
 
-        button {
-          width: 100px;
-          padding: 10px;
-          margin-top: 30px;
-          background-color: orange;
-          border: none;
-          cursor: pointer;
-          align-items: center;
+    .box {
+      flex: 1;
+      padding: 50px;
+      border: 0.5px solid gray;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      h2 {
+        margin-bottom: 30px;
+        font-size: 24px; /* Increased font size for h2 */
+        font-weight: bold; /* Added font weight */
+      }
+
+      p {
+        font-size: 15px;
+        text-align: center; /* Center aligning paragraph text */
+      }
+
+      button {
+        width: 200px; /* Adjusted width for better button layout */
+        padding: 10px;
+        margin-top: 30px;
+        background-color: orange;
+        border: none;
+        cursor: pointer;
+        font-size: 18px; /* Increased font size */
+        border-radius: 10px; /* Added border radius for button */
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+          background-color: darkorange;
+          color: white;
         }
       }
     }
-  
-
- 
   }
+}

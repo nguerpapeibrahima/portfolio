@@ -1,4 +1,4 @@
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 import './hero.scss';
 
 const testVariants = {
@@ -11,8 +11,8 @@ const testVariants = {
     opacity: 1,
     transition: {
       duration: 1,
-      staggerChildren: 1, // Fix typo here: staggerChidren -> staggerChildren
-    }
+      staggerChildren: 1, // Corrected typo: staggerChidren -> staggerChildren
+    },
   },
   scrollButton: {
     opacity: 0,
@@ -20,8 +20,8 @@ const testVariants = {
     transition: {
       duration: 2,
       repeat: Infinity,
-    }
-  }
+    },
+  },
 };
 
 const sidetVariants = {
@@ -29,7 +29,7 @@ const sidetVariants = {
     x: 0,
   },
   animate: {
-    x: "220%",
+    x: "220%", // Adjusted x value for animation
     transition: {
       repeat: Infinity,
       repeatType: "mirror",
@@ -38,28 +38,26 @@ const sidetVariants = {
   },
 };
 
-
-
 const Hero = () => {
   return (
-    <div className='hero' >
+    <div className='hero'>
       <div className='wrapper'>
-        <motion.div className='textContainer'variants={testVariants} initial="initial" animate="animate">
-          <motion.h2 variants={testVariants} >PAPE IBRAHIMA NGUER</motion.h2>
-          <motion.h1 variants={testVariants} >Web developer and UI designer</motion.h1>
-        <motion.div variants={testVariants}  className='buttons'>
-          <motion.button variants={testVariants} >See the Later Works</motion.button>
-          <motion.button variants={testVariants} >Contact Me</motion.button>
+        <motion.div className='textContainer' variants={testVariants} initial='initial' animate='animate'>
+          <motion.h2 variants={testVariants}>PAPE IBRAHIMA NGUER</motion.h2>
+          <motion.h1 variants={testVariants}>Web developer and UI designer</motion.h1>
+          <motion.div variants={testVariants} className='buttons'>
+            <motion.button variants={testVariants}>See the Latest Works</motion.button>
+            <motion.button variants={testVariants}>Contact Me</motion.button>
+          </motion.div>
+          <motion.img variants={testVariants} animate='scrollButton' src='./assets/icons8-scroll-down.gif' alt='' />
         </motion.div>
-          <motion.img variants={testVariants} animate="scrollButton" src='./assets/icons8-scroll-down.gif' alt=''/>
-        </motion.div>
-        </div>
-        <motion.div className='slidingTextContainer' variants={sidetVariants} initial="initial" animate="animate">
-          SOFTWARE ENGENEER 
-        </motion.div>
+      </div>
+      <motion.div className='slidingTextContainer' variants={sidetVariants} initial='initial' animate='animate'>
+        SOFTWARE ENGINEER
+      </motion.div>
       <div className='imageContainer'>
-        <img src='./assets/cv papa -.png' alt=''/>
-      </div> 
+        <img src='./assets/cv papa -.png' alt='' />
+      </div>
     </div>
   );
 };

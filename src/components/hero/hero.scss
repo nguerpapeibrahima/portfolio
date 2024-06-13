@@ -1,7 +1,7 @@
 .hero {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 100px); /* Adjusted height to ensure it's 100% viewport height minus 100px */
   overflow: hidden;
-  background: linear-gradient(180deg, #0c0c1d, #111132);
+  background: linear-gradient(180deg, #0c0c1d, #111132); /* Gradient background */
   position: relative;
 
   .wrapper {
@@ -12,16 +12,16 @@
     align-items: center;
 
     .textContainer {
-      width: 50%;
+      width: 50%; /* Taking 50% width of the wrapper */
       height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 40px;
+      gap: 40px; /* Vertical gap between elements */
 
       h2 {
         font-size: 25px;
-        color: rebeccapurple;
+        color: rebeccapurple; /* Adjusted color for h2 */
         letter-spacing: 10px;
       }
 
@@ -35,7 +35,7 @@
         gap: 20px; /* Using gap instead of margin-right for consistency */
 
         button {
-          padding: 20px;
+          padding: 20px; /* Adjusted padding for buttons */
           border: 1px solid white;
           border-radius: 10px;
           color: white;
@@ -47,7 +47,7 @@
     }
 
     img {
-      width: 50px;
+      width: 50px; /* Adjusted width of the image */
     }
   }
 
@@ -56,16 +56,16 @@
     position: absolute;
     top: 0;
     right: 0;
-    /* Missing properties for the image, adjust as needed */
+    /* Add properties for your image as needed */
   }
 
   .slidingTextContainer {
     position: absolute;
-    font-size: 18vh;
-    bottom: -20px;
-    white-space: nowrap;
-    color: #ffffff09;
-    width: 50%;
-    font-weight: bold;
+    font-size: 18vh; /* Adjusted font size for sliding text */
+    bottom: -20px; /* Positioned text container from the bottom */
+    white-space: nowrap; /* Ensures text doesn't wrap */
+    color: #ffffff09; /* Adjusted color with opacity for sliding text */
+    width: 50%; /* Width of the text container */
+    font-weight: bold; /* Bold text for emphasis */
   }
 }

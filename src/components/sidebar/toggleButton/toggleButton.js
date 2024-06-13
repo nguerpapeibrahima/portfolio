@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
-
 const ToggleButton = ({ setOpen }) => {
   return (
     <button onClick={() => setOpen(prev => !prev)}>
       <svg viewBox="0 0 23 23" width="23" height="23">
+        {/* Path for the top horizontal line */}
         <motion.path
           strokeWidth="3"
           stroke="black"
@@ -14,6 +14,7 @@ const ToggleButton = ({ setOpen }) => {
             open: { d: "M 3 16.5 L 17 2.5" }
           }}
         />
+        {/* Path for the middle horizontal line */}
         <motion.path
           strokeWidth="3"
           stroke="black"
@@ -24,6 +25,7 @@ const ToggleButton = ({ setOpen }) => {
             open: { opacity: 0 }
           }}
         />
+        {/* Path for the bottom horizontal line */}
         <motion.path
           strokeWidth="3"
           stroke="black"
@@ -39,5 +41,3 @@ const ToggleButton = ({ setOpen }) => {
 };
 
 export default ToggleButton;
-
-

@@ -19,28 +19,31 @@ const itemsVariants = {
     y: 0,
     opacity: 1,
   },
-  closed:{
+  closed: {
     y: 50,
     opacity: 0,
   }
 };
-  const items = 
-    ["HomePage",
-    "Services",
-    "Portfolio",
-    "About",
-    "Contact"]
-  
+
+const items = [
+  "HomePage",
+  "Services",
+  "Portfolio",
+  "About",
+  "Contact"
+];
 
 const Links = () => {
   return (
-    <motion.div className='links' variants={variants}>
-    {items.map(item => (
-      <motion.a href={`#${item}`} key={item}  itemsVariants={itemsVariants} >{item}</motion.a>
-    )
-    )}   
+    <motion.div className='links' variants={variants} initial="closed" animate="open">
+      {items.map(item => (
+        <motion.a href={`#${item}`} key={item} variants={itemsVariants}>
+          {item}
+        </motion.a>
+      ))}
     </motion.div>
   );
 }
 
 export default Links;
+
