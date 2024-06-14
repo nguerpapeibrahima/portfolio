@@ -29,7 +29,6 @@ const items = [
   "HomePage",
   "Services",
   "Portfolio",
-  "About",
   "Contact"
 ];
 

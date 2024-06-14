@@ -1,5 +1,5 @@
 import './services.scss';
-import { animate, color, motion, stagger, useInView } from 'framer-motion';
+import {  motion, useInView } from 'framer-motion';
 import imgCode from './code1.jpg'
 import { useRef } from 'react';
 

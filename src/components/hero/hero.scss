@@ -47,7 +47,7 @@
     }
 
     img {
-      width: 50px; /* Adjusted width of the image */
+      width: 20px; /* Adjusted width of the image */
     }
   }
 
@@ -55,7 +55,12 @@
     height: 100%;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 20px;
+
+    img {
+      border: none;
+      border-radius: 50px;
+    }
     /* Add properties for your image as needed */
   }
 
