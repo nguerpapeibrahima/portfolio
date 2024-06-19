@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a77939e9.css",
-    "main.js": "/portfolio/static/js/main.283abea5.js",
+    "main.css": "/portfolio/static/css/main.db12560d.css",
+    "main.js": "/portfolio/static/js/main.46ae92fa.js",
     "static/media/pexels-cliford-mervil-988071-2469122.jpg": "/portfolio/static/media/pexels-cliford-mervil-988071-2469122.095376fd921774b844ab.jpg",
     "static/media/pexels-weavehall-collective-746895245-18617923.jpg": "/portfolio/static/media/pexels-weavehall-collective-746895245-18617923.678a4e29df22d65e8d40.jpg",
     "static/media/code1.jpg": "/portfolio/static/media/code1.54b40cd737102e1051ec.jpg",
@@ -9,12 +9,13 @@
     "static/media/pexels-hiteshchoudhary-879109.jpg": "/portfolio/static/media/pexels-hiteshchoudhary-879109.1b1aa3b72cf3d58e448c.jpg",
     "static/media/pexels-realtoughcandy-11035363.jpg": "/portfolio/static/media/pexels-realtoughcandy-11035363.d3081b63972cd5a3f113.jpg",
     "static/media/code2.jpg": "/portfolio/static/media/code2.c6bc55a7d897096e9046.jpg",
+    "static/media/cv papa -.png": "/portfolio/static/media/cv papa -.2ee28f39739a0ba4ca86.png",
     "index.html": "/portfolio/index.html",
-    "main.a77939e9.css.map": "/portfolio/static/css/main.a77939e9.css.map",
-    "main.283abea5.js.map": "/portfolio/static/js/main.283abea5.js.map"
+    "main.db12560d.css.map": "/portfolio/static/css/main.db12560d.css.map",
+    "main.46ae92fa.js.map": "/portfolio/static/js/main.46ae92fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.a77939e9.css",
-    "static/js/main.283abea5.js"
+    "static/css/main.db12560d.css",
+    "static/js/main.46ae92fa.js"
   ]
 }
