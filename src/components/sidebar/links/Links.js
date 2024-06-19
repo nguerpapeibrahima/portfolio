@@ -14,7 +14,7 @@ const variants = {
   }
 };
 
-const itemsVariants = {
+const itemVariants = {
   open: {
     y: 0,
     opacity: 1,
@@ -36,7 +36,7 @@ const Links = () => {
   return (
     <motion.div className='links' variants={variants} initial="closed" animate="open">
       {items.map(item => (
-        <motion.a href={`#${item}`} key={item} variants={itemsVariants}>
+        <motion.a href={`#${item}`} key={item} variants={itemVariants} className='navLink'>
           {item}
         </motion.a>
       ))}
@@ -45,4 +45,3 @@ const Links = () => {
 }
 
 export default Links;
-
