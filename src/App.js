@@ -7,6 +7,7 @@ import Sidebar from './components/sidebar/Sidebar';
 import Services from './components/services/Services';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/conatct/Contact';
+import About from './components/about/About';
 
 const App =() => {
   return (
@@ -16,11 +17,12 @@ const App =() => {
     <Hero/> 
     </section>
     <section> <Sidebar/> </section>
-    <section id='Services'><Parallax type="services"/> </section>
-    <section><Services/> </section>
+    <section id='About'><Parallax type="services"/> </section>
+    <About/>
     <section id='Portfolio'><Parallax type='portfolio' /> </section>
+     <section id='Services'><Services/></section>
     <Portfolio/>
-    <section id='Contact'><Contact/> </section>    
+    <section id='Contact'><Contact/> </section>     
     </div>
   );
 }

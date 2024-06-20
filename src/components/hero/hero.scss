@@ -58,8 +58,13 @@
     right: 20px;
 
     img {
-      border: none;
-      border-radius: 50px;
+       margin: auto;
+        display: block;
+        margin-top: 20px;
+        height: 220px;
+        width: 220px;
+        border-radius: 50%;
+        border: 3px solid white;
     }
     /* Add properties for your image as needed */
   }
@@ -131,7 +136,7 @@
       img {
         width: 100%;
         height: 100%;
-        object-fit: cover; 
+        object-fit: fill; 
       }
     }
 
